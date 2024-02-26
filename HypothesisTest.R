@@ -147,6 +147,9 @@ attach(ceosal2)
 summary(a<-lm(lsalary~lsales+lmktval+profmarg+ceoten+comten))
 
 linearHypothesis(a,c("ceoten=0","comten=0"))
+#When ceoten increase by 1 unit (1 year), salary will increase by 1.7 percent on average. 
+#When comten increase by 1 unit (1 year), salary will decrease by 0.9 percent. 
+#Individually, both variables are significant at 1 percent level. 
 
 # Example question 6
 return1<-read_excel("return1.xls")
