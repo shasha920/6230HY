@@ -38,4 +38,6 @@ d=plm(lfare~y98+y99+y00+passen+bmktshr+ldist+ldistsq,model=c("random"),data=airf
 summary(d)
 
 #Hausman test
+#null hypothesis, random effect model is better than fixed effect,
+#as the fixed effect model is inefficient (but still consistent) in this case
 phtest(c,d)
